@@ -13,8 +13,8 @@ RUN conda install -c pyviz holoviews bokeh
 #RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Create ans switch to user
-RUN useradd --create-home --shell /bin/zsh nilsolav
-USER nilsolav
+RUN useradd --create-home --shell /bin/zsh a39083
+USER a39083
 # Install Oh-My-zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 

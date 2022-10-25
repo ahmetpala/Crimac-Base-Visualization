@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get -qq -y install git emacs zsh wget curl sudo
 # plotly jupyter-dash dash pandas anaconda ipywidgets
 RUN pip install --upgrade pip
-RUN pip install jupyterlab plotly pandas ipywidgets xarray zarr dask pyarrow fastparquet matplotlib scipy scikit-learn PyYAML numpy
+RUN pip install jupyterlab plotly pandas ipywidgets xarray zarr dask pyarrow fastparquet matplotlib scipy scikit-learn PyYAML numpy importlib-metadata==4.13.0
 RUN pip install numcodecs tqdm tensorboard
 
 # Install Rstox

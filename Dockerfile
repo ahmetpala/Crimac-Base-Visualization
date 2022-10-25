@@ -5,8 +5,8 @@ WORKDIR /install
 RUN apt-get update
 RUN apt-get -qq -y install git emacs zsh wget curl sudo
 # plotly jupyter-dash dash pandas anaconda ipywidgets
-RUN conda install -c conda-forge jupyterlab plotly pandas ipywidgets xarray zarr datashader pyarrow fastparquet matplotlib
-RUN conda install -c pyviz holoviews bokeh
+RUN conda install -c conda-forge jupyterlab plotly pandas ipywidgets xarray zarr dask pyarrow fastparquet matplotlib torch scipy scikit-learn PyYAML numpy
+RUN conda install -c numcodecs tqdm tensorboard
 
 # Install Rstox
 #RUN r install.packages("RstoxBase", repos = c("https://stoxproject.github.io/repo", "https://cloud.r-project.org"))

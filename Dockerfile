@@ -6,8 +6,8 @@ RUN apt-get update
 RUN apt-get -qq -y install git emacs zsh wget curl sudo
 # plotly jupyter-dash dash pandas anaconda ipywidgets
 RUN pip install --upgrade pip
-RUN pip install -c conda-forge jupyterlab plotly pandas ipywidgets xarray zarr dask pyarrow fastparquet matplotlib scipy scikit-learn PyYAML numpy
-RUN pip install -c numcodecs tqdm tensorboard
+RUN pip install jupyterlab plotly pandas ipywidgets xarray zarr dask pyarrow fastparquet matplotlib scipy scikit-learn PyYAML numpy
+RUN pip install numcodecs tqdm tensorboard
 
 # Install Rstox
 #RUN r install.packages("RstoxBase", repos = c("https://stoxproject.github.io/repo", "https://cloud.r-project.org"))
